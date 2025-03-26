@@ -1,4 +1,9 @@
-{{config(materialized = 'view')}}
+{{config(
+    materialized = 'view',
+    alias = 'decred_silver',
+    tags = ['decred', 'bronze'],
+    )
+    }}
 
 
 SELECT *
@@ -10,7 +15,7 @@ PA
 ,DS_OPERACAO_TIPO_NATUREZA
 ,SUM(VL_OPERACAO) AS VL_OPERACAO
 ,SUM(CAST(VL_CANCELADO AS FLOAT64)) AS VL_CALCELADO
-FROM {{ref('decred_homo')}}
+FROM {{ref('decred_bronze')}}
 GROUP BY
 PA
 ,NU_CNPJ_CLIENTE_ORIG

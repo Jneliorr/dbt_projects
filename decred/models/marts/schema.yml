@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: decred_gold
+    description: "tabela com valores de operações de debito/credito."
+    columns:
+      - name: PA
+        description: "Periodo de Apuração (PA)"
+        tests: []
+      - name: NU_CNPJ_CLIENTE_ORIG
+        description: "CNPJ original do cliente (antes de eventual conversão)"
+        tests: []
+      - name: OP_DEBITO
+        description: "Descrição da natureza da operação"
+        tests: []
+      - name: CAN_DEBITO
+        description: "Valor monetário da operação"
+        tests: []
+      - name: OP_CREDITO
+        description: "Valor cancelado da operação (se aplicável)"
+        tests: []
+      - name: CAN_CREDITO
+        description: "Identificador único para integração com sistemas da SEFAZ"
+        tests: []
+      - name: VL_LIQUIDO
+        description: "Periodo de Apuração (PA)"
+        tests: []

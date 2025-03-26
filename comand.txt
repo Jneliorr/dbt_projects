@@ -1,0 +1,20 @@
+dbt run
+dbr run --select stagin
+dbt docs generate && \ dbt docs serve
+
+
+1. Usando seleção por tag (recomendado)
+dbt run --select tag:staging
+
+2. Usando seleção por caminho
+dbt run --select staging.*
+
+
+3. Usando seleção por nomes específicos
+dbt run --select decred_bronze decred_silver
+
+4. Alternativa com exclusão
+dbt run --exclude tag:marts
+
+5. Listar Modelos
+dbt ls --select tag:staging

@@ -1,0 +1,211 @@
+version: 2
+
+models:
+  - name: decred_raw
+    description: "Tabela contendo informações sobre operações de débito/recebíveis (decred) incluindo dados de transações, administradoras, clientes e equipamentos."
+    columns:
+      - name: DS_ORIGEM_INFORMACAO
+        description: "Fonte/origem da informação"
+        tests: []
+      - name: SQ_REG_0000
+        description: "Sequencial único do registro"
+        tests: []
+      - name: NU_CNPJ_ADMINISTRADORA_ARQUIVO
+        description: "CNPJ da administradora responsável pelo arquivo"
+        tests: []
+      - name: NO_ADMINISTRADORA_ARQUIVO
+        description: "Nome da administradora responsável pelo arquivo"
+        tests: []
+      - name: NU_CNPJ_LIQUIDANTE_OPERACAO
+        description: "CNPJ da instituição liquidante da operação"
+        tests: []
+      - name: NO_LIQUIDANTE_OPERACAO
+        description: "Nome da instituição liquidante da operação"
+        tests: []
+      - name: TP_NIVEL_OPERACAO
+        description: "Tipo/código do nível da operação"
+        tests: []
+      - name: DS_TIPO_NIVEL
+        description: "Descrição do tipo de nível da operação"
+        tests: []
+      - name: NU_CNPJ_CLIENTE_ORIG
+        description: "CNPJ original do cliente (antes de eventual conversão)"
+        tests: []
+      - name: NU_CNPJ_CLIENTE
+        description: "CNPJ do cliente (estabelecimento comercial)"
+        tests: []
+      - name: NU_CPF_CLIENTE
+        description: "CPF do cliente (pessoa física)"
+        tests: []
+      - name: NO_FANTASIA_CLIENTE
+        description: "Nome fantasia do cliente/estabelecimento"
+        tests: []
+      - name: NO_RESP_CADASTRO
+        description: "Nome do responsável pelo cadastro"
+        tests: []
+      - name: CO_MCAPT
+        description: "Código do meio de captura (equipamento)"
+        tests: []
+      - name: NU_MCAPT_LOGICO
+        description: "Número lógico do meio de captura"
+        tests: []
+      - name: IN_MCAPT_TERMINAL_PROPRIO
+        description: "Indicador se o terminal é próprio (S/N)"
+        tests: []
+      - name: DS_MCAPT_MARCA
+        description: "Marca do equipamento de captura"
+        tests: []
+      - name: NO_MCAPT_TIPO_TECNOLOGIA
+        description: "Tipo/tecnologia do equipamento de captura"
+        tests: []
+      - name: DS_OPERACAO_MES
+        description: "Mês de referência da operação"
+        tests: []
+      - name: DS_OPERACAO_ANO
+        description: "Ano de referência da operação"
+        tests: []
+      - name: DH_OPERACAO
+        description: "Data e hora da operação"
+        tests: []
+      - name: DS_OPERACAO_BANDEIRA_CARTAO
+        description: "Bandeira do cartão utilizada na operação"
+        tests: []
+      - name: DS_OPERACAO_NSU
+        description: "Número Sequencial Único (NSU) da transação"
+        tests: []
+      - name: DS_OPERACAO_TRANSACAO
+        description: "Descrição/código do tipo de transação"
+        tests: []
+      - name: CO_OPERACAO_AUT
+        description: "Código de autorização da operação"
+        tests: []
+      - name: DS_OPERACAO_TIPO_NATUREZA
+        description: "Descrição da natureza da operação"
+        tests: []
+      - name: CO_NAT_OPERACAO
+        description: "Código da natureza da operação"
+        tests: []
+      - name: VL_OPERACAO
+        description: "Valor monetário da operação"
+        tests: []
+      - name: VL_CANCELADO
+        description: "Valor cancelado da operação (se aplicável)"
+        tests: []
+      - name: ID_SEFAZ
+        description: "Identificador único para integração com sistemas da SEFAZ"
+        tests: []
+
+  - name: decred_bronze
+    description: "Tabela contendo informações sobre operações de débito/recebíveis (decred) incluindo dados de transações, administradoras, clientes e equipamentos."
+    columns:
+      - name: DS_ORIGEM_INFORMACAO
+        description: "Fonte/origem da informação"
+        tests: []
+      - name: SQ_REG_0000
+        description: "Sequencial único do registro"
+        tests: []
+      - name: NU_CNPJ_ADMINISTRADORA_ARQUIVO
+        description: "CNPJ da administradora responsável pelo arquivo"
+        tests: []
+      - name: NO_ADMINISTRADORA_ARQUIVO
+        description: "Nome da administradora responsável pelo arquivo"
+        tests: []
+      - name: NU_CNPJ_LIQUIDANTE_OPERACAO
+        description: "CNPJ da instituição liquidante da operação"
+        tests: []
+      - name: NO_LIQUIDANTE_OPERACAO
+        description: "Nome da instituição liquidante da operação"
+        tests: []
+      - name: TP_NIVEL_OPERACAO
+        description: "Tipo/código do nível da operação"
+        tests: []
+      - name: DS_TIPO_NIVEL
+        description: "Descrição do tipo de nível da operação"
+        tests: []
+      - name: NU_CNPJ_CLIENTE_ORIG
+        description: "CNPJ original do cliente (antes de eventual conversão)"
+        tests: []
+      - name: NU_CNPJ_CLIENTE
+        description: "CNPJ do cliente (estabelecimento comercial)"
+        tests: []
+      - name: NU_CPF_CLIENTE
+        description: "CPF do cliente (pessoa física)"
+        tests: []
+      - name: NO_FANTASIA_CLIENTE
+        description: "Nome fantasia do cliente/estabelecimento"
+        tests: []
+      - name: NO_RESP_CADASTRO
+        description: "Nome do responsável pelo cadastro"
+        tests: []
+      - name: CO_MCAPT
+        description: "Código do meio de captura (equipamento)"
+        tests: []
+      - name: NU_MCAPT_LOGICO
+        description: "Número lógico do meio de captura"
+        tests: []
+      - name: IN_MCAPT_TERMINAL_PROPRIO
+        description: "Indicador se o terminal é próprio (S/N)"
+        tests: []
+      - name: DS_MCAPT_MARCA
+        description: "Marca do equipamento de captura"
+        tests: []
+      - name: NO_MCAPT_TIPO_TECNOLOGIA
+        description: "Tipo/tecnologia do equipamento de captura"
+        tests: []
+      - name: DS_OPERACAO_MES
+        description: "Mês de referência da operação"
+        tests: []
+      - name: DS_OPERACAO_ANO
+        description: "Ano de referência da operação"
+        tests: []
+      - name: DH_OPERACAO
+        description: "Data e hora da operação"
+        tests: []
+      - name: DS_OPERACAO_BANDEIRA_CARTAO
+        description: "Bandeira do cartão utilizada na operação"
+        tests: []
+      - name: DS_OPERACAO_NSU
+        description: "Número Sequencial Único (NSU) da transação"
+        tests: []
+      - name: DS_OPERACAO_TRANSACAO
+        description: "Descrição/código do tipo de transação"
+        tests: []
+      - name: CO_OPERACAO_AUT
+        description: "Código de autorização da operação"
+        tests: []
+      - name: DS_OPERACAO_TIPO_NATUREZA
+        description: "Descrição da natureza da operação"
+        tests: []
+      - name: CO_NAT_OPERACAO
+        description: "Código da natureza da operação"
+        tests: []
+      - name: VL_OPERACAO
+        description: "Valor monetário da operação"
+        tests: []
+      - name: VL_CANCELADO
+        description: "Valor cancelado da operação (se aplicável)"
+        tests: []
+      - name: ID_SEFAZ
+        description: "Identificador único para integração com sistemas da SEFAZ"
+        tests: []
+      - name: PA
+        description: "Periodo de Apuração (PA)"
+        tests: []
+    
+  - name: decred_silver
+    description: "tabela com valores de operações de debito/credito."
+    columns:
+      - name: PA
+        description: "Periodo de Apuração (PA)"
+        tests: []
+      - name: NU_CNPJ_CLIENTE_ORIG
+        description: "CNPJ original do cliente (antes de eventual conversão)"
+        tests: []
+      - name: DS_OPERACAO_TIPO_NATUREZA
+        description: "Descrição da natureza da operação"
+        tests: []
+      - name: VL_OPERACAO
+        description: "Valor monetário da operação"
+        tests: []
+      - name: VL_CANCELADO
+        description: "Valor cancelado da operação (se aplicável)"

@@ -1,10 +1,10 @@
 name: 'decred'
 version: '1.0.0'
-
+config-version: 2
 
 profile: 'decred'
 
-
+# Paths configurados para o projeto
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -12,7 +12,33 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-clean-targets:       
+clean-targets:
   - "target"
   - "dbt_packages"
 
+on-run-end:
+  - "dbt docs generate"
+  - "dbt docs serve"
+
+# Configurações dos modelos
+models:
+  decred:
+    # Configurações globais
+    +location: "southamerica-east1"
+    +tags: ["decred"]
+
+    # Camada de staging (Bronze/Silver)
+    staging:
+      +materialized: view
+      +tags: ["staging"]
+      decred_bronze:
+        +alias: "bronze_decred"
+      decred_silver:
+        +alias: "silver_decred"
+
+    # Camada analítica (Gold)
+    marts:
+      +materialized: table
+      +tags: ["marts"]
+      decred_gold:
+        +alias: "gold_decred"
