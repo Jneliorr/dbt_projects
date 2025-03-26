@@ -16,9 +16,6 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-on-run-end:
-  - "dbt docs generate"
-  - "dbt docs serve"
 
 # Configurações dos modelos
 models:
