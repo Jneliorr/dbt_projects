@@ -1,0 +1,69 @@
+# Nome do projeto dbt
+name: 'cnpj'
+version: '1.0.0'
+
+# Nome do perfil de conexão que será utilizado, definido no profiles.yml
+profile: 'cnpj'
+
+# Caminhos onde o dbt irá procurar os diferentes tipos de arquivos
+model-paths: ["models"]           # Onde os modelos SQL (transformações de dados) estão localizados
+analysis-paths: ["analyses"]      # Onde análises exploratórias ou scripts auxiliares serão armazenados
+test-paths: ["tests"]             # Onde os arquivos de teste personalizados serão armazenados
+seed-paths: ["seeds"]             # Onde arquivos CSV (dados de entrada fixos) serão armazenados
+macro-paths: ["macros"]           # Onde macros (funções reutilizáveis no dbt) serão armazenadas
+snapshot-paths: ["snapshots"]     # Onde os snapshots (versões históricas de tabelas) serão armazenados
+
+# Diretórios que serão limpos ao rodar o comando `dbt clean`
+clean-targets:        
+  - "target"            # Diretório de saída do dbt (compilação de modelos e artefatos)
+  - "dbt_packages"      # Diretório onde os pacotes dbt externos são instalados
+
+# Definição das variáveis
+vars:
+  filtro_COD_TOM: ""
+  filtro_uf: ""
+
+# Configuração dos seeds
+seeds:
+  cnpj:
+    d_motivo:
+      +column_types:
+        id_motivo: STRING
+        desc_motivo: STRING
+    d_municipio:
+      +column_types:
+        id_municipio: STRING
+        nome_municipio: STRING
+    d_natureza_juridica:
+      +column_types:
+        id_natureza_juridica: STRING
+        desc_natureza_juridica: STRING
+    d_paises:
+      +column_types:
+        id_pais: STRING
+        nome_pais: STRING
+    d_porte:
+      +column_types:
+        id_porte: STRING
+        desc_porte: STRING
+    d_qualificacao:
+      +column_types:
+        id_socio: STRING
+        desc_socio: STRING
+    d_situacao_cadastral:
+      +column_types:
+        id_situacao: STRING
+        descricao_situacao: STRING
+
+# Configuração dos modelos do projeto
+models:
+  cnpj:                    # Diretório principal para os modelos
+    example:               # Subdiretório ou grupo de modelos específico
+      +full_refresh: True  # Define que os modelos serão atualizados de forma completa
+      +materialized: view  # Define que os modelos serão materializados como `view` no banco de dados
+
+      # Opções para materialização:
+      # - view: cria uma view no banco de dados (mais leve e rápida para consultas)
+      # - table: cria uma tabela física (melhor para consultas pesadas)
+      # - incremental: atualiza os dados de forma incremental
+      # - ephemeral: modelo temporário, usado apenas em tempo de execução

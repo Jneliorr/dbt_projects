@@ -1,0 +1,220 @@
+version: 2
+
+models:
+  - name: simples_nacional
+    description: "Tabela contendo informações sobre a opção pelo Simples Nacional e MEI para empresas."
+    columns:
+      - name: CNPJ_BASICO
+        description: "Número básico do CNPJ da empresa."
+        data_type: string
+        tests:
+          - not_null
+          - unique
+      - name: OPCAO_PELO_SIMPLES
+        description: "Indica se a empresa optou pelo Simples Nacional."
+        data_type: string
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["S", "N"]
+      - name: DATA_OPCAO_SIMPLES
+        description: "Data em que a empresa optou pelo Simples Nacional."
+        data_type: string
+        tests:
+          - not_null
+      - name: DATA_EXCLUSAO_DO_SIMPLES
+        description: "Data em que a empresa foi excluída do Simples Nacional."
+        data_type: string
+        tests: []
+      - name: OPCAO_PELO_MEI
+        description: "Indica se a empresa optou pelo MEI."
+        data_type: string
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["S", "N"]
+      - name: DATA_OPCAO_MEI
+        description: "Data em que a empresa optou pelo MEI."
+        data_type: string
+        tests: []
+      - name: DATA_EXCLUSAO_DO_MEI
+        description: "Data em que a empresa foi excluída do MEI."
+        data_type: string
+        tests: []
+
+  - name: estabelecimento
+    description: "Tabela contendo informações detalhadas sobre os estabelecimentos associados aos CNPJs."
+    columns:
+      - name: CNPJ_BASICO
+        description: "Número básico do CNPJ da empresa."
+        data_type: string
+        tests:
+          - not_null
+      - name: CNPJ_ORDEM
+        description: "Número sequencial do CNPJ da empresa."
+        data_type: string
+        tests:
+          - not_null
+      - name: CNPJ_DV
+        description: "Dígito verificador do CNPJ."
+        data_type: string
+        tests:
+          - not_null
+      - name: MATRIZ_FILIAL
+        description: "Indica se o estabelecimento é Matriz (1) ou Filial (2)."
+        data_type: string
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["1", "2"]
+      - name: NOME_FANTASIA
+        description: "Nome fantasia do estabelecimento."
+        data_type: string
+        tests: []
+      - name: SITUACAO_CADASTRAL
+        description: "Situação cadastral do estabelecimento."
+        data_type: string
+        tests:
+          - not_null
+      - name: DATA_SITUACAO_CADASTRAL
+        description: "Data de alteração da situação cadastral."
+        data_type: string
+        tests: []
+      - name: MOTIVO_SITUACAO
+        description: "Motivo da situação cadastral."
+        data_type: string
+        tests: []
+      - name: CNPJ_COMPLETO
+        description: "CNPJ completo do estabelecimento (CNPJ básico + ordem + DV)."
+        data_type: string
+        tests:
+          - not_null
+          - unique
+      - name: MUNICIPIO
+        description: "Município onde o estabelecimento está localizado."
+        data_type: string
+        tests:
+          - not_null
+      - name: UF
+        description: "Unidade Federativa (estado) do estabelecimento."
+        data_type: string
+        tests:
+          - not_null
+      - name: DATA_INICIO_ATIVIDADE
+        description: "Data de início das atividades do estabelecimento."
+        data_type: string
+        tests: []
+      - name: CNAE_PRINCIPAL
+        description: "Código CNAE principal do estabelecimento."
+        data_type: string
+        tests:
+          - not_null
+      - name: CNAE_SECUNDARIA
+        description: "Códigos CNAE secundários do estabelecimento."
+        data_type: string
+        tests: []
+      - name: LOGRADOURO
+        description: "Endereço do logradouro."
+        data_type: string
+        tests: []
+      - name: NUMERO
+        description: "Número do endereço do estabelecimento."
+        data_type: string
+        tests: []
+      - name: COMPLEMENTO
+        description: "Complemento do endereço."
+        data_type: string
+        tests: []
+      - name: BAIRRO
+        description: "Bairro do estabelecimento."
+        data_type: string
+        tests: []
+      - name: CEP
+        description: "Código de Endereçamento Postal do estabelecimento."
+        data_type: string
+        tests: []
+      - name: DDD1
+        description: "DDD do telefone principal."
+        data_type: string
+        tests: []
+      - name: TEL1
+        description: "Número do telefone principal."
+        data_type: string
+        tests: []
+      - name: DDD2
+        description: "DDD do segundo telefone."
+        data_type: string
+        tests: []
+      - name: TEL2
+        description: "Número do segundo telefone."
+        data_type: string
+        tests: []
+      - name: DDD_FAX
+        description: "DDD do fax."
+        data_type: string
+        tests: []
+      - name: TEL_FAX
+        description: "Número do fax."
+        data_type: string
+        tests: []
+      - name: E_MAIL
+        description: "E-mail do estabelecimento."
+        data_type: string
+        tests: []
+      - name: SITUACAO_ESPECIAL
+        description: "Situação especial do estabelecimento."
+        data_type: string
+        tests: []
+      - name: DATA_SIT_ESPECIAL
+        description: "Data de início da situação especial."
+        data_type: string
+        tests: []
+
+  - name: empresas
+    description: "Tabela contendo informações detalhadas sobre as empresas."
+    columns:
+      - name: CNPJ_BASICO
+        description: "Número básico do CNPJ da empresa."
+        data_type: string
+        tests:
+          - not_null
+      - name: RAZAO_SOCIAL
+        description: "Razão social da empresa."
+        data_type: string
+        tests: []
+      - name: COD_NATUREZA_JUR
+        description: "Código da natureza jurídica da empresa."
+        data_type: string
+        tests: []
+      - name: CAPITAL_SOCIAL
+        description: "Capital social da empresa."
+        data_type: string
+        tests: []
+      - name: ENT_RESPONSAVEL
+        description: "Entidade responsável pela empresa."
+        data_type: string
+        tests: []
+      - name: COD_PORT_EMPRESA
+        description: "Código do porte da empresa."
+        data_type: string
+        tests: []
+
+  - name: cnae
+    description: "Tabela contendo informações sobre o CNAE."
+    columns:
+      - name: cnae
+        description: "Código CNAE."
+        data_type: string
+        tests:
+          - not_null
+          - unique
+      - name: descricao
+        description: "Descrição do código CNAE."
+        data_type: string
+        tests:
+          - not_null
+      - name: tipo
+        description: "Se o CNAE é comércio, serviço ou indústria."
+        data_type: string
+        tests:
+          - not_null

@@ -1,0 +1,13 @@
+municipio:
+  outputs:
+    dev:
+      dataset: dbt_municipio
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: southamerica-east1
+      method: oauth
+      priority: interactive
+      project: infra-itaborai
+      threads: 6
+      type: bigquery
+  target: dev

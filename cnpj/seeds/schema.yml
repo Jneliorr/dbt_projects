@@ -1,0 +1,118 @@
+version: 2
+models:
+  - name: d_motivo
+    description: 'Tabela d_motivo'
+    columns:
+      - name: COD_MOTIVO
+        description: 'Coluna COD_MOTIVO'
+        tests: []
+        type: string
+      - name: DESCRICAO_MOTIVO
+        description: 'Coluna DESCRICAO_MOTIVO'
+        tests: []
+        type: string
+  - name: d_municipio
+    description: 'Tabela d_municipio'
+    columns:
+      - name: COD_MOTIVO
+        description: 'Coluna COD_MOTIVO'
+        tests: []
+        type: string
+      - name: DESCRICAO_MOTIVO
+        description: 'Coluna DESCRICAO_MOTIVO'
+        tests: []
+        type: string
+  - name: d_natureza_juridica
+    description: 'Tabela d_natureza_juridica'
+    columns:
+      - name: COD_NATUREZA_JURIDICA
+        description: 'Coluna COD_NATUREZA_JURIDICA'
+        tests: []
+        type: string
+      - name: DESCRICAO_NATUREZA_JURIDICA
+        description: 'Coluna DESCRICAO_NATUREZA_JURIDICA'
+        tests: []
+        type: string
+  - name: d_paises
+    description: 'Tabela d_paises'
+    columns:
+      - name: COD_PAIS
+        description: 'Coluna COD_PAIS'
+        tests: []
+        type: string
+      - name: DESCRICAO_PAIS
+        description: 'Coluna DESCRICAO_PAIS'
+        tests: []
+        type: string
+  - name: d_porte
+    description: 'Tabela d_porte'
+    columns:
+      - name: ID
+        description: 'Coluna ID'
+        tests: []
+        type: string
+      - name: DESCRICAO
+        description: 'Coluna DESCRICAO'
+        tests: []
+        type: string
+  - name: d_qualificacao
+    description: 'Tabela d_qualificacao'
+    columns:
+      - name: COD_QUALIFICACAO_SOCIO
+        description: 'Coluna COD_QUALIFICACAO_SOCIO'
+        tests: []
+        type: string
+      - name: DESCRICAO_QUALIFICACAO_SOCIO
+        description: 'Coluna DESCRICAO_QUALIFICACAO_SOCIO'
+        tests: []
+        type: string
+  - name: d_situacao_cadastral
+    description: 'Tabela d_situacao_cadastral'
+    columns:
+      - name: ID
+        description: 'Coluna ID'
+        tests: []
+        type: string
+      - name: DESCRICAO
+        description: 'Coluna DESCRICAO'
+        tests: []
+        type: string
+  - name: municipio_regiao_ibge
+    description: 'Tabela municipio_regiao_ibge'
+    columns:
+      - name: UF
+        description: 'Coluna UF'
+        tests: []
+        type: string
+      - name: Nome_UF
+        description: 'Coluna Nome_UF'
+        tests: []
+        type: string
+      - name: Mesorregião Geográfica
+        description: 'Coluna Mesorregião Geográfica'
+        tests: []
+        type: string
+      - name: Nome_Mesorregião
+        description: 'Coluna Nome_Mesorregião'
+        tests: []
+        type: string
+      - name: Microrregião Geográfica
+        description: 'Coluna Microrregião Geográfica'
+        tests: []
+        type: string
+      - name: Nome_Microrregião
+        description: 'Coluna Nome_Microrregião'
+        tests: []
+        type: string
+      - name: Município
+        description: 'Coluna Município'
+        tests: []
+        type: string
+      - name: Código Município Completo
+        description: 'Coluna Código Município Completo'
+        tests: []
+        type: string
+      - name: Nome_Município
+        description: 'Coluna Nome_Município'
+        tests: []
+        type: string

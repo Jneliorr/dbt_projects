@@ -1,0 +1,91 @@
+id_natureza_juridica,desc_natureza_juridica
+0000,Natureza JuridiCa nao informada
+3271,Orgao de DireCao LoCal de Partido PolitiCo
+3280,Comite FinanCeiro de Partido PolitiCo
+3298,Frente PlebisCitaria ou Referendaria
+3301,OrganizaCao SoCial (OS)
+3999,AssoCiaCao Privada
+4014,Empresa Individual Imobiliaria
+4090,Candidato a Cargo PolitiCo Eletivo
+4120,Produtor Rural (Pessoa FisiCa)
+5010,OrganizaCao InternaCional
+5029,RepresentaCao DiplomatiCa Estrangeira
+1015,Orgao PubliCo do Poder ExeCutivo Federal
+1023,Orgao PubliCo do Poder ExeCutivo Estadual ou do Distrito Federal
+1031,Orgao PubliCo do Poder ExeCutivo MuniCipal
+1040,Orgao PubliCo do Poder Legislativo Federal
+1058,Orgao PubliCo do Poder Legislativo Estadual ou do Distrito Federal
+1066,Orgao PubliCo do Poder Legislativo MuniCipal
+1074,Orgao PubliCo do Poder JudiCiario Federal
+1082,Orgao PubliCo do Poder JudiCiario Estadual
+1104,Autarquia Federal
+1112,Autarquia Estadual ou do Distrito Federal
+1120,Autarquia MuniCipal
+1139,FundaCao PubliCa de Direito PubliCo Federal
+1147,FundaCao PubliCa de Direito PubliCo Estadual ou do Distrito Federal
+1155,FundaCao PubliCa de Direito PubliCo MuniCipal
+1163,Orgao PubliCo Autonomo Federal
+1171,Orgao PubliCo Autonomo Estadual ou do Distrito Federal
+1180,Orgao PubliCo Autonomo MuniCipal
+1198,Comissao PolinaCional
+1210,ConsorCio PubliCo de Direito PubliCo (AssoCiaCao PubliCa)
+1228,ConsorCio PubliCo de Direito Privado
+1236,Estado ou Distrito Federal
+1244,MuniCipio
+1252,FundaCao PubliCa de Direito Privado Federal
+1260,FundaCao PubliCa de Direito Privado Estadual ou do Distrito Federal
+1279,FundaCao PubliCa de Direito Privado MuniCipal
+1287,Fundo PubliCo da AdministraCao Indireta Federal
+1295,Fundo PubliCo da AdministraCao Indireta Estadual ou do Distrito Federal
+1309,Fundo PubliCo da AdministraCao Indireta MuniCipal
+1317,Fundo PubliCo da AdministraCao Direta Federal
+1325,Fundo PubliCo da AdministraCao Direta Estadual ou do Distrito Federal
+1333,Fundo PubliCo da AdministraCao Direta MuniCipal
+1341,Uniao
+2011,Empresa PubliCa
+2038,SoCiedade de EConomia Mista
+2046,SoCiedade Anonima Aberta
+2054,SoCiedade Anonima FeChada
+2062,SoCiedade Empresaria Limitada
+2070,SoCiedade Empresaria em Nome Coletivo
+2089,SoCiedade Empresaria em Comandita Simples
+2097,SoCiedade Empresaria em Comandita por ACoes
+2100,SoCiedade MerCantil de Capital e Industria
+2127,SoCiedade em Conta de PartiCipaCao
+2135,Empresario (Individual)
+2143,Cooperativa
+2151,ConsorCio de SoCiedades
+2160,Grupo de SoCiedades
+2178,"EstabeleCimento, no Brasil, de SoCiedade Estrangeira"
+2194,"EstabeleCimento, no Brasil, de Empresa BinaCional Argentino-Brasileira"
+2216,Empresa DomiCiliada no Exterior
+2224,Clube/Fundo de Investimento
+2232,SoCiedade Simples Pura
+2240,SoCiedade Simples Limitada
+2259,SoCiedade Simples em Nome Coletivo
+2267,SoCiedade Simples em Comandita Simples
+2275,Empresa BinaCional
+2283,ConsorCio de Empregadores
+2291,ConsorCio Simples
+2305,Empresa Individual de Responsabilidade Limitada (de Natureza Empresaria)
+2313,Empresa Individual de Responsabilidade Limitada (de Natureza Simples)
+2321,SoCiedade Unipessoal de AdvoCaCia
+2330,Cooperativas de Consumo
+2348,Empresa Simples de InovaCao
+3034,ServiCo Notarial e Registral (Cartorio)
+3069,FundaCao Privada
+3077,ServiCo SoCial Autonomo
+3085,Condominio EdiliCio
+3107,Comissao de ConCiliaCao Previa
+3115,Entidade de MediaCao e Arbitragem
+3131,Entidade SindiCal
+3204,"EstabeleCimento, no Brasil, de FundaCao ou AssoCiaCao Estrangeiras"
+3212,FundaCao ou AssoCiaCao DomiCiliada no Exterior
+3220,OrganizaCao Religiosa
+3239,Comunidade Indigena
+3247,Fundo Privado
+3255,Orgao de DireCao NaCional de Partido PolitiCo
+3263,Orgao de DireCao Regional de Partido PolitiCo
+5037,Outras InstituiCoes Extraterritoriais
+3328,Plano de BenefiCios de PrevidenCia Complementar FeChada
+8885,Natureza JuridiCa nao informada

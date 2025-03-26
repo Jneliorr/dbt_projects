@@ -1,0 +1,69 @@
+id_socio,desc_socio
+00,Nao informada
+05,Administrador
+08,Conselheiro de AdministraCao
+09,Curador
+10,Diretor
+11,Interventor
+12,Inventariante
+13,Liquidante
+14,Mae
+15,Pai
+16,Presidente
+17,ProCurador
+18,SeCretario
+19,SindiCo (Condominio)
+20,SoCiedade ConsorCiada
+21,SoCiedade Filiada
+22,SoCio
+23,SoCio Capitalista
+24,SoCio Comanditado
+25,SoCio Comanditario
+26,SoCio de Industria
+28,SoCio-Gerente
+29,SoCio InCapaz ou Relat.InCapaz (exCeto menor)
+30,SoCio Menor (Assistido/Representado)
+31,SoCio Ostensivo
+32,Tabeliao
+33,Tesoureiro
+34,Titular de Empresa Individual Imobiliaria
+35,Tutor
+37,SoCio Pessoa JuridiCa DomiCiliado no Exterior
+38,SoCio Pessoa FisiCa Residente no Exterior
+39,Diplomata
+40,Consul
+41,Representante de OrganizaCao InternaCional
+42,OfiCial de Registro
+43,Responsavel
+46,Ministro de Estado das RelaCoes Exteriores
+47,SoCio Pessoa FisiCa Residente no Brasil
+48,SoCio Pessoa JuridiCa DomiCiliado no Brasil
+49,SoCio-Administrador
+50,Empresario
+51,Candidato a Cargo PolitiCo Eletivo
+52,SoCio Com Capital
+53,SoCio sem Capital
+54,Fundador
+55,SoCio Comanditado Residente no Exterior
+56,SoCio Comanditario Pessoa FisiCa Residente no Exterior
+57,SoCio Comanditario Pessoa JuridiCa DomiCiliado no Exterior
+58,SoCio Comanditario InCapaz
+59,Produtor Rural
+60,Consul Honorario
+61,Responsavel indigena
+62,Representante da InstituiCao Extraterritorial
+63,Cotas em Tesouraria
+64,Administrador JudiCial
+65,Titular Pessoa FisiCa Residente ou DomiCiliado no Brasil
+66,Titular Pessoa FisiCa Residente ou DomiCiliado no Exterior
+67,Titular Pessoa FisiCa InCapaz ou Relativamente InCapaz (exCeto menor)
+68,Titular Pessoa FisiCa Menor (Assistido/Representado)
+69,BenefiCiario Final
+70,Administrador Residente ou DomiCiliado no Exterior
+71,Conselheiro de AdministraCao Residente ou DomiCiliado no Exterior
+72,Diretor Residente ou DomiCiliado no Exterior
+73,Presidente Residente ou DomiCiliado no Exterior
+74,SoCio-Administrador Residente ou DomiCiliado no Exterior
+75,Fundador Residente ou DomiCiliado no Exterior
+78,Titular Pessoa JuridiCa DomiCiliada no Brasil
+79,Titular Pessoa JuridiCa DomiCiliada no Exterior
