@@ -1,0 +1,13 @@
+testes_config:
+  outputs:
+    dev:
+      dataset: teste2
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: southamerica-east1
+      method: oauth
+      priority: interactive
+      project: infra-itaborai
+      threads: 6
+      type: bigquery
+  target: dev

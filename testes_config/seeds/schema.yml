@@ -1,0 +1,25 @@
+version: 2
+
+seeds:  # ← Correção: usar 'seeds' em vez de 'models'
+  - name: teste_seed
+    description: 'Tabela de dados de referência'
+    config:
+      column_types:
+        ID: STRING      # Tipo correto para BigQuery
+        VALOR: INT64  # VARCHAR não é recomendado no BigQuery
+        NOME: STRING    # Use STRING para todos os textos
+
+    columns:
+      - name: ID
+        description: 'Identificador único'
+        data_tests: 
+          - not_null
+          - unique
+
+      - name: VALOR
+        description: 'Código de valor (2 caracteres)'
+        data_tests: []
+
+      - name: NOME
+        description: 'Nome abreviado'
+        data_tests: []

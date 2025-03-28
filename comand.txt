@@ -1,6 +1,7 @@
 dbt run
 dbr run --select stagin
-dbt docs generate && \ dbt docs serve
+dbt docs generate 
+dbt docs serve
 
 
 1. Usando seleção por tag (recomendado)

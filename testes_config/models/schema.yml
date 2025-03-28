@@ -1,0 +1,24 @@
+version: 2
+
+
+models:  # ← Correção: usar 'seeds' em vez de 'models'
+
+  - name: hakuna_matata
+    description: 'hakuna matata'
+    columns:
+      - name: ID
+        description: 'Identificador único'
+        data_type: STRING
+        tests:
+          - not_null
+          - unique
+
+      - name: VALOR
+        description: 'Código de valor (2 caracteres)'
+        data_type: STRING
+        data_tests: []
+
+      - name: NOME
+        description: 'Nome abreviado'
+        data_type: STRING
+        data_tests: []

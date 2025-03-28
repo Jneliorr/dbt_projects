@@ -1,0 +1,41 @@
+
+name: 'testes_config'
+version: '1.0.0'
+
+
+profile: 'testes_config'
+
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:        
+  - "target"
+  - "dbt_packages"
+
+vars:
+
+
+
+query-comment: >
+  dbt project: testes_config
+  usuario: 'Nelio'
+  at: {{ run_started_at.strftime("%c") }}
+
+# seeds:
+#   testes_config: #projeto
+#     teste_seed: #nomeArquivo
+#       +column_types:
+#         ID: STRING
+#         VALOR: STRING
+#         NOME: STRING
+
+
+# models:
+#   testes_config:
+#     example:
+#       +materialized: view

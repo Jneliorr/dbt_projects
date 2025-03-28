@@ -205,3 +205,32 @@ Runtime Error
 [0m17:11:25.192627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001745734BB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174574C1880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001745542D820>]}
 [0m17:11:25.192627 [debug] [MainThread]: Flushing usage events
 [0m17:11:25.888202 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:43:03.698929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E900A5520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E904CE960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E8E1C1610>]}
+
+
+============================== 09:43:03.704086 | 0767efc8-fb85-4638-92c6-78719cb88c9a ==============================
+[0m09:43:03.704086 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:43:03.704950 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\User\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:43:16.349137 [debug] [MainThread]: Starter project path: C:\Users\User\anaconda3\Lib\site-packages\dbt\include\starter_project
+[0m09:43:16.379361 [info ] [MainThread]: 
+Your new dbt project "testes_config" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:43:16.380369 [info ] [MainThread]: Setting up your profile.
+[0m09:44:01.259943 [info ] [MainThread]: Profile testes_config written to C:\Users\User\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:44:01.261940 [debug] [MainThread]: Command `dbt init` succeeded at 09:44:01.261940 after 57.80 seconds
+[0m09:44:01.262948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E90E36EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EA3EEA450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EA3F1EC00>]}
+[0m09:44:01.263953 [debug] [MainThread]: Flushing usage events
+[0m09:44:01.887239 [debug] [MainThread]: An error was encountered while trying to flush usage events
