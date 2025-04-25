@@ -17,6 +17,6 @@ WHERE
   AND 
   ('{{var("filtro_uf")}}' = "" OR a.UF = '{{var("filtro_uf")}}') 
 
--- dbt run --select cnpj_rj --vars '{"filtro_municipio": "Itaborai", "filtro_uf": "RJ"}'
--- dbt run --select cnpj_rj_itaborai --vars '{"filtro_municipio": "Itaborai", "filtro_uf": "RJ"}' && dbt run --exclude cnpj_rj_itaborai
+
+-- dbt run --select cnpj_rj_itaborai --vars '{"filtro_municipio": "5837", "filtro_uf": "RJ"}' && dbt run --exclude cnpj_rj_itaborai
 

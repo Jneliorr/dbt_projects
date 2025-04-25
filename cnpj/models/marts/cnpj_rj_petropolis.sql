@@ -17,5 +17,4 @@ WHERE
   AND 
   ('{{var("filtro_uf")}}' = "" OR a.UF = '{{var("filtro_uf")}}') 
 
-
 -- dbt run --select cnpj_rj_petropolis --vars '{"filtro_COD_TOM": "5877"}'
