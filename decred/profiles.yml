@@ -1,10 +1,10 @@
 decred:
   outputs:
     dev:
-      dataset: dbt_decred
+      dataset: mds_decred
       job_execution_timeout_seconds: 300
       job_retries: 1
-      location: southamerica-east1
+      location: us-central1 #southamerica-east1
       method: oauth
       priority: interactive
       project: infra-itaborai

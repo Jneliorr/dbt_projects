@@ -16,6 +16,10 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+# Definição das variáveis
+vars:
+  filtro_COD_TOM: ""
+  filtro_uf: ""
 
 # Configurações dos modelos
 models:
