@@ -1,10 +1,9 @@
-{{ config(materialized='table',full_refresh=true) }}
+{{ config(materialized='view',full_refresh=true, alias='dbt_cnpj_rj') }}
 
-SELECT a.*,
-    b.*
-EXCEPT(CNPJ_BASICO),
-    c.*
-EXCEPT(CNPJ_BASICO),
+SELECT 
+    a.*,
+    b.* EXCEPT(CNPJ_BASICO),
+    c.*EXCEPT(CNPJ_BASICO),
     d.cnae AS CNAE,
     d.tipo AS CLASIFICACAO_PRINCIPAL,
     d.descricao AS DESCRICAO_CNAE

@@ -1,3 +1,3 @@
-{{ config(full_refresh=true) }}
+{{ config(materialized='view',full_refresh=true,alias = 'dbt_cnae') }}
     SELECT *
-    FROM `cnpj_rfb.DIM_cnaeServico`
+    FROM `infra-itaborai.mds_cnpj.cnae_servico`

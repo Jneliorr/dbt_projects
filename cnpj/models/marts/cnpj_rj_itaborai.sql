@@ -1,4 +1,4 @@
-{{ config(materialized='table',full_refresh=true) }}
+{{ config(materialized='table',full_refresh=true, alias='dbt_cnpj_itaborai') }}
 
 SELECT a.*,
     b.*
@@ -19,4 +19,4 @@ WHERE
 
 
 -- dbt run --select cnpj_rj_itaborai --vars '{"filtro_municipio": "5837", "filtro_uf": "RJ"}' && dbt run --exclude cnpj_rj_itaborai
-
+-- dbt run --select cnpj_rj_itaborai --vars '{"filtro_COD_TOM": "5837"}'

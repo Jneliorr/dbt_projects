@@ -1,2 +1,3 @@
-{{ config(materialized='view',full_refresh=true) }}
-SELECT *  FROM `cnpj_rfb.estabelecimentos`
+{{ config(materialized='view',full_refresh=true,alias = 'dbt_estabelecimento') }}
+
+SELECT *  FROM `infra-itaborai.mds_cnpj.estabelecimentos`

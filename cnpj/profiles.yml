@@ -1,10 +1,10 @@
 cnpj:
   outputs:
     dev:
-      dataset: dbt_cnpj_rfb
+      dataset: mds_cnpj
       job_execution_timeout_seconds: 300
       job_retries: 1
-      location: southamerica-east1
+      location: us-central1
       method: oauth
       priority: interactive
       project: infra-itaborai
